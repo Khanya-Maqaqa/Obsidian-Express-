@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Obsidian-Express-Contact</title>
 </head>
-<body>
+<body background="images/DARK MINIMALIST TEXTURED WALLPAPER.jpg" text="white" link="white" vlink="white" alink="white">
     <header>
         <nav aria-label="Main navigation">
             <a href="home.html">
@@ -18,5 +18,49 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us!</p>
+            <img src="images/team.jpg" alt="Obsidian Express Team" width="600" height="800">
+            <address>
+                50 Stiemens, Floor 8<br>
+                Braamfontein, 2001<br>
+                <a href="tel:+27762061064">0762061064</a><br>
+                <a href="mailto:info@obsidianexpress.com">info@obsidianexpress.com</a>
+            </address>
+        </section>
+        <section>
+            <h2>Find Us</h2>
+            <p>Visit us at our location in Braamfontein, Johannesburg. We look forward to serving you!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1424997462777!2d28.03374207412377!3d-26.192042377084075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c197f0ce08d%3A0x2759935211bffdf8!2s50%20Stiemens%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017!5e0!3m2!1sen!2sza!4v1788377039539!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p>We value your feedback and will get back to you as soon as possible.</p>
+        </section>
+        <section>
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media for the latest updates and promotions.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/obsidianexpress" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/obsidianexpress" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p align="center">&copy; 2026 Obsidiann Express, All rights reserved</p>
 </body>
 </html>
