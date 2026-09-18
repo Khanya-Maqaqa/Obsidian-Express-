@@ -3,64 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian-Express-Contact</title>
+    <title>Obsidian Express | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/DARK MINIMALIST TEXTURED WALLPAPER.jpg" text="white" link="white" vlink="white" alink="white">
+<body>
     <header>
         <nav aria-label="Main navigation">
             <a href="home.html">
-                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo" width="120">
+                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
             </a>
-            <ul>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Contact Us</h2>
             <p>If you have any questions or feedback, feel free to reach out to us!</p>
-            <img src="images/team.jpg" alt="Obsidian Express Team" width="600" height="800">
-            <address>
-                50 Stiemens, Floor 8<br>
-                Braamfontein, 2001<br>
-                <a href="tel:+27762061064">0762061064</a><br>
-                <a href="mailto:info@obsidianexpress.com">info@obsidianexpress.com</a>
-            </address>
+            <div class="contact-grid">
+                <div class="contact-photo">
+                    <img src="images/team.jpg" alt="The Obsidian Express team" loading="lazy">
+                </div>
+                <div>
+                    <h3>Visit / Call / Email</h3>
+                    <address>
+                        50 Stiemens Street, Floor 8<br>
+                        Braamfontein, 2001<br>
+                        <a href="tel:+27762061064">076 206 1064</a><br>
+                        <a href="mailto:info@obsidianexpress.com">info@obsidianexpress.com</a>
+                    </address>
+                    <h3 style="margin-top: 1.5rem;">Operating Hours</h3>
+                    <address>
+                        Mon &ndash; Fri: 10:00 &ndash; 21:00<br>
+                        Sat &ndash; Sun: 11:00 &ndash; 22:00
+                    </address>
+                </div>
+            </div>
         </section>
+
         <section>
             <h2>Find Us</h2>
             <p>Visit us at our location in Braamfontein, Johannesburg. We look forward to serving you!</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1424997462777!2d28.03374207412377!3d-26.192042377084075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c197f0ce08d%3A0x2759935211bffdf8!2s50%20Stiemens%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017!5e0!3m2!1sen!2sza!4v1788377039539!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <div class="map-wrap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.1424997462777!2d28.03374207412377!3d-26.192042377084075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c197f0ce08d%3A0x2759935211bffdf8!2s50%20Stiemens%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202017!5e0!3m2!1sen!2sza!4v1788377039539!5m2!1sen!2sza" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Obsidian Express location map"></iframe>
+            </div>
         </section>
+
         <section>
             <h2>Send Us a Message</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
             <p>We value your feedback and will get back to you as soon as possible.</p>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </section>
+
         <section>
             <h2>Follow Us</h2>
             <p>Stay connected with us on social media for the latest updates and promotions.</p>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=61594124307209" target="_blank">Facebook</a></li>
-                <li><a href="https://www.instagram.com/obsidian_express/" target="_blank">Instagram</a></li>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61594124307209" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/obsidian_express/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm5-3.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
+
     <footer>
-        <p align="center">&copy; 2026 Obsidiann Express, All rights reserved</p>
+        <p>&copy; 2026 Obsidian Express. All rights reserved.</p>
+    </footer>
 </body>
 </html>
