@@ -63,7 +63,7 @@ body {
   flex-direction: column;
 }
 
-1, h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -76,5 +76,21 @@ h2 {
   margin-bottom: var(--space-sm);
   position: relative;
   display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg, var(--orange), var(--gold));
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: clamp(1.15rem, 1rem + 0.5vw, 1.5rem);
+  color: var(--gold);
+  margin-bottom: var(--space-xs);
 }
 
