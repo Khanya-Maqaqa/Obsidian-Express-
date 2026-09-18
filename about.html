@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian-Express-About</title>
-    
+    <title>Obsidian Express | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/DARK MINIMALIST TEXTURED WALLPAPER.jpg" text="white" link="white" vlink="white" alink="white">
+<body>
     <header>
         <nav aria-label="Main navigation">
             <a href="home.html">
-                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo" width="120">
+                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
             </a>
-            <ul>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section class="about-intro">
             <h2>About Us</h2>
-            <p>Welcome to Obsidian Express! We are a team of passionate chefs and food enthusiasts dedicated to bringing you the best of South African cuisine. Our mission is to provide a unique dining experience that combines traditional flavors with modern culinary techniques. Let us take you on a culinary journey through the heart of South Africa. Meet our team and learn about the passion behind every dish.   </p>
-            <img src="images/Restuarant.jpg" alt="Resurant Interior" width="800" height="500">
-            <br>
+            <p>Welcome to Obsidian Express! We are a team of passionate chefs and food enthusiasts dedicated to bringing you the best of South African cuisine. Our mission is to provide a unique dining experience that combines traditional flavours with modern culinary techniques. Let us take you on a culinary journey through the heart of South Africa &mdash; meet our team and learn about the passion behind every dish.</p>
+            <img src="images/Restuarant.jpg" alt="Restaurant interior" loading="lazy">
         </section>
+
         <section>
             <h2>Our Story</h2>
-            <br>
-            <h3>Founding Member</h3>
-            <img src="images/founder.jpg" alt="Founder" width="500" height="600">
-            <p>Obsidian Express was founded in 2026 with a vision to create a dining experience that celebrates the rich culinary heritage of South Africa. Our founder Mr Athi Mavovana, who come from diverse backgrounds in the food industry, wanted to create a space where people could enjoy authentic South African dishes made with fresh, locally sourced ingredients. In the past few months, we have grown into a beloved establishment known for our commitment to quality and innovation in the kitchen. The biggest goal we have is to continue to innovate and provide the best possible dining experience for our guests while on the go as fastfood does not have to lose its elegance and quality.</p>
-            <br>
-            <h3>Restaurant Manager</h3>
-            <img src="images/manager.jpg" alt="Manager" width="500" height="600">
-            <p>Our manager, Mr Nande Mavovana, brings years of experience in the hospitality industry and is committed to ensuring that every guest has a memorable dining experience at Obsidian Express.</p>
-            <br>
-            <h3>Head Chef</h3>
-            <img src="images/Chef.jpg" alt="Head Chef" width="500" height="600">
-            <p>Our head chef, Mr Yonwaba Bewana, is a culinary expert with a passion for creating innovative dishes that showcase the best of South African cuisine. With his extensive knowledge of local ingredients and flavors, he leads our kitchen team in crafting dishes that are both delicious and visually stunning.</p>
+            <p>Obsidian Express was founded in 2026 with a vision to create a dining experience that celebrates the rich culinary heritage of South Africa. Our founder, Mr Athi Mavovana, who comes from a diverse background in the food industry, wanted to create a space where people could enjoy authentic South African dishes made with fresh, locally sourced ingredients. In the past few months we have grown into a beloved establishment known for our commitment to quality and innovation in the kitchen &mdash; because fast food doesn't have to lose its elegance.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/founder.jpg" alt="Founder, Mr Athi Mavovana" loading="lazy">
+                    <h3>Founding Member</h3>
+                    <p>Athi Mavovana &mdash; founded Obsidian Express to bring authentic, locally sourced South African flavour to fast dining.</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/manager.jpg" alt="Restaurant Manager, Mr Nande Mavovana" loading="lazy">
+                    <h3>Restaurant Manager</h3>
+                    <p>Nande Mavovana brings years of hospitality experience, ensuring every guest has a memorable dining experience.</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/Chef.jpg" alt="Head Chef, Mr Yonwaba Bewana" loading="lazy">
+                    <h3>Head Chef</h3>
+                    <p>Yonwaba Bewana leads our kitchen with a passion for showcasing the best of South African cuisine, both delicious and visually stunning.</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-      <p align="center">&copy; 2026 Obsidiann Express, All rights reserved </p>
+        <p>&copy; 2026 Obsidian Express. All rights reserved.</p>
     </footer>
 </body>
 </html>
