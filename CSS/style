@@ -45,3 +45,36 @@ button, input, textarea {
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.45);
   --transition: 0.3s ease;
 }
+
+body {
+  background-color: var(--obsidian);
+  background-image:
+    linear-gradient(180deg, rgba(11, 11, 13, 0.92) 0%, rgba(11, 11, 13, 0.96) 100%),
+    url("images/DARK MINIMALIST TEXTURED WALLPAPER.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: var(--off-white);
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--off-white);
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.75rem);
+  margin-bottom: var(--space-sm);
+  position: relative;
+  display: inline-block;
+}
+
