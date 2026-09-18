@@ -21,3 +21,27 @@ button, input, textarea {
   font: inherit;
   color: inherit;
 }
+
+:root {
+  --obsidian: #0b0b0d;
+  --charcoal: #16161a;
+  --charcoal-light: #1f1f24;
+  --charcoal-lighter: #2a2a31;
+  --orange: #ff7a29;
+  --orange-light: #ff9a57;
+  --gold: #d4af37;
+  --silver: #c9cbd1;
+  --off-white: #f3f1ec;
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --max-width: 1200px;
+  --radius: 12px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --transition: 0.3s ease;
+}
