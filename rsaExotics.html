@@ -3,54 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exotic Culturally</title>
+    <title>Obsidian Express | Exotic Culturally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body background="images/DARK MINIMALIST TEXTURED WALLPAPER.jpg" text="white" link="white" vlink="white" alink="white">
+<body>
     <header>
         <nav aria-label="Main navigation">
-            <ul>
+            <a href="home.html">
+                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section align="center">
+        <section class="hero">
             <a href="home.html">
-                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo" width="300" height="300">
+                <img class="hero-logo" src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
             </a>
-            <h2>Exotic Culturally</h2>
-            <p>Discover the rich flavors of South African cuisine with our exotic and culturally inspired dishes.</p>
+            <h1>Exotic Culturally</h1>
+            <p>Discover the rich flavours of South African cuisine with our exotic and culturally inspired dishes.</p>
         </section>
+
         <section>
-            <h2>Chicken Feet</h2>
-            <p>Try our Chicken Feet, a unique and flavorful dish that showcases the diversity of South African cuisine.</p>
-            <img src="images/Chicken Feet.jpg" alt="Chicken Feet" width="200" height="200">
-            <br>
-            <h2>Chicken Gizzard</h2>
-            <p>Indulge in our Chicken Gizzard, a unique and flavorful dish that showcases the diversity of South African cuisine.</p>
-            <img src="images/gizzards.jpg" alt="Chicken Gizzard" width="200" height="200">
-            <br>
-            <h2>Pork Troters</h2>
-            <p>Try our Pork Troters, a unique and flavorful dish that showcases the diversity of South African cuisine.</p>
-            <p>Served with a varriety of fillings(mince curry, chicken livers or polony&chesse with russian)</p>
-            <img src="images/pork troters.jpg" alt="Pork Troters" width="200" height="200"> 
-            <h2>Ulusu / Mogodu</h2>
-            <p>Enjoy our Ulusu / Mogodu, a traditional South African dish that showcases the diversity of the region's culinary heritage.</p>
-            <img src="images/ulusu.jpg" alt="Ulusu / Mogodu" width="200" height="200">
-        </section> 
+            <div class="dish-detail">
+                <img src="images/Chicken Feet.jpg" alt="Chicken Feet" loading="lazy">
+                <div>
+                    <h2>Chicken Feet</h2>
+                    <p>Try our Chicken Feet, a unique and flavourful dish that showcases the diversity of South African cuisine.</p>
+                </div>
+            </div>
+            <div class="dish-detail">
+                <img src="images/gizzards.jpg" alt="Chicken Gizzard" loading="lazy">
+                <div>
+                    <h2>Chicken Gizzard</h2>
+                    <p>Indulge in our Chicken Gizzard, a unique and flavourful dish that showcases the diversity of South African cuisine.</p>
+                </div>
+            </div>
+            <div class="dish-detail">
+                <img src="images/pork troters.jpg" alt="Pork Trotters" loading="lazy">
+                <div>
+                    <h2>Pork Trotters</h2>
+                    <p>Try our Pork Trotters, a unique and flavourful dish that showcases the diversity of South African cuisine.</p>
+                    <p>Served with a variety of fillings (mince curry, chicken livers, or polony &amp; cheese with russian).</p>
+                </div>
+            </div>
+            <div class="dish-detail">
+                <img src="images/ulusu.jpg" alt="Ulusu / Mogodu" loading="lazy">
+                <div>
+                    <h2>Ulusu / Mogodu</h2>
+                    <p>Enjoy our Ulusu / Mogodu, a traditional South African dish that showcases the diversity of the region's culinary heritage.</p>
+                </div>
+            </div>
+        </section>
+
         <section>
             <h2>Our Menu</h2>
-            <p>We offer a variety of dishes that are designed to be both quick and delicious. From classic South African comfort foods to innovative culinary creations, our menu has something for everyone of all cultures.</p>
-            <a href="plateKos.html"><img src="images/7 colours.jpg" alt="7 colours plate" width="200" height="200"></a>
-            <a href="rsaClassics.html"><img src="images/FISH AND CHIPS.jpg" alt="Fish and Chips plate" width="200" height="200"></a>
-            <a href="rsaSandwitches"><img src="images/kota.jpeg" alt="Kota plate" width="200" height="200"></a>
-            <a href="rsaExotics.html"><img src="images/Mogodu.jpg" alt="Mogodu" width="200" height="200"></a>
+            <p>We offer a variety of dishes designed to be both quick and delicious. From classic South African comfort foods to innovative culinary creations, our menu has something for everyone.</p>
+            <div class="menu-grid">
+                <figure class="dish-card">
+                    <a href="plateKos.html">
+                        <img src="images/7 colours.jpg" alt="Seven Colours plate" loading="lazy">
+                        <figcaption class="card-label">Plate Kos</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaClassics.html">
+                        <img src="images/FISH AND CHIPS.jpg" alt="Fish and Chips plate" loading="lazy">
+                        <figcaption class="card-label">RSA Classics</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaSandwitches.html">
+                        <img src="images/kota.jpeg" alt="Kota plate" loading="lazy">
+                        <figcaption class="card-label">Quick Snacks</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaExotics.html">
+                        <img src="images/Mogodu.jpg" alt="Mogodu" loading="lazy">
+                        <figcaption class="card-label">Exotic Culturally</figcaption>
+                    </a>
+                </figure>
+            </div>
         </section>
     </main>
+
     <footer>
-            <p align="center">&copy; 2026 Obsidiann Express, All rights reserved </p>
+        <p>&copy; 2026 Obsidian Express. All rights reserved.</p>
     </footer>
 </body>
 </html>
