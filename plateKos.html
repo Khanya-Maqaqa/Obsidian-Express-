@@ -3,53 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plate Kos</title>
+    <title>Obsidian Express | Plate Kos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body background="images/DARK MINIMALIST TEXTURED WALLPAPER.jpg" text="white" link="white" vlink="white" alink="white">
+<body>
     <header>
         <nav aria-label="Main navigation">
-            <ul>
+            <a href="home.html">
+                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section align="center">
-            <a href="home.html">
-                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo" width="300" height="300">
-            </a>
-            <h2>Plate Kos</h2>
-            <p>Experience the bold flavors of South African cuisine with our signature Plate Kos, a hearty dish that combines traditional ingredients with a modern twist.</p>
 
+    <main>
+        <section class="hero">
+            <a href="home.html">
+                <img class="hero-logo" src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
+            </a>
+            <h1>Plate Kos</h1>
+            <p>Experience the bold flavours of South African cuisine with our signature Plate Kos &mdash; hearty dishes that combine traditional ingredients with a modern twist.</p>
         </section>
+
         <section>
-            <h2>Seven Colours plate</h2>
-            <p>Indulge in the vibrant flavors of our Seven Colours dish, a celebration of South African ingredients presented in a visually stunning array.</p>
-            <p>It is offered with any protein of your choice.(chicken, beef, or mutton), yellow rice or plain rice and an array of 3 vegetable sides to choose from.</p>
-            <img src="images/7 colours.jpg" alt="7 colours plate" width="200" height="200">  
-            <br>
-            <h2>Durban Curry</h2>
-            <p>Spice up your meal with our Durban Curry, a rich and aromatic dish that captures the essence of South African Indian cuisine.</p>
-            <p>It is served with naan bread and offerd with and protien of your choice.(chicken, beef or mutton)</p>
-            <img src="images/Spicy Durban Lamb Curry.jpg" alt="Durban Curry plate" width="200" height="200">
-            <br>
-            <h2>Bobotie</h2>
-            <p>Enjoy the rich and savory flavors of our Bobotie, a traditional South African dish that combines spiced meat with a creamy topping.</p>
-            <img src="images/bobotie.jpg" alt="Bobotie plate" width="200" height="200">
+            <div class="dish-detail">
+                <img src="images/7 colours.jpg" alt="Seven Colours plate" loading="lazy">
+                <div>
+                    <h2>Seven Colours Plate</h2>
+                    <p>Indulge in the vibrant flavours of our Seven Colours dish, a celebration of South African ingredients presented in a visually stunning array.</p>
+                    <p>Offered with any protein of your choice (chicken, beef or mutton), yellow or plain rice, and a choice of three vegetable sides.</p>
+                </div>
+            </div>
+            <div class="dish-detail">
+                <img src="images/Spicy Durban Lamb Curry.jpg" alt="Durban Curry plate" loading="lazy">
+                <div>
+                    <h2>Durban Curry</h2>
+                    <p>Spice up your meal with our Durban Curry, a rich and aromatic dish that captures the essence of South African Indian cuisine.</p>
+                    <p>Served with naan bread and a protein of your choice (chicken, beef or mutton).</p>
+                </div>
+            </div>
+            <div class="dish-detail">
+                <img src="images/Bobotie.jpg" alt="Bobotie plate" loading="lazy">
+                <div>
+                    <h2>Bobotie</h2>
+                    <p>Enjoy the rich and savoury flavours of our Bobotie, a traditional South African dish combining spiced meat with a creamy topping.</p>
+                </div>
+            </div>
         </section>
+
         <section>
             <h2>Our Menu</h2>
-            <p>We offer a variety of dishes that are designed to be both quick and delicious. From classic South African comfort foods to innovative culinary creations, our menu has something for everyone of all cultures.</p>
-            <a href="plateKos.html"><img src="images/7 colours.jpg" alt="7 colours plate" width="200" height="200"></a>
-            <a href="rsaClassics.html"><img src="images/FISH AND CHIPS.jpg" alt="Fish and Chips plate" width="200" height="200"></a>
-            <a href="rsaSandwitches.html"><img src="images/kota.jpeg" alt="Kota plate" width="200" height="200"></a>
-            <a href="rsaExotics.html"><img src="images/Mogodu.jpg" alt="Mogodu" width="200" height="200"></a>
+            <p>We offer a variety of dishes designed to be both quick and delicious. From classic South African comfort foods to innovative culinary creations, our menu has something for everyone.</p>
+            <div class="menu-grid">
+                <figure class="dish-card">
+                    <a href="plateKos.html">
+                        <img src="images/7 colours.jpg" alt="Seven Colours plate" loading="lazy">
+                        <figcaption class="card-label">Plate Kos</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaClassics.html">
+                        <img src="images/FISH AND CHIPS.jpg" alt="Fish and Chips plate" loading="lazy">
+                        <figcaption class="card-label">RSA Classics</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaSandwitches.html">
+                        <img src="images/kota.jpeg" alt="Kota sandwich" loading="lazy">
+                        <figcaption class="card-label">Quick Snacks</figcaption>
+                    </a>
+                </figure>
+                <figure class="dish-card">
+                    <a href="rsaExotics.html">
+                        <img src="images/Mogodu.jpg" alt="Mogodu plate" loading="lazy">
+                        <figcaption class="card-label">Exotic Culturally</figcaption>
+                    </a>
+                </figure>
+            </div>
         </section>
     </main>
+
     <footer>
-            <p align="center">&copy; 2026 Obsidiann Express, All rights reserved </p>
+        <p>&copy; 2026 Obsidian Express. All rights reserved.</p>
     </footer>
 </body>
 </html>
