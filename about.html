@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obsidian Express | About</title>
+    <title>About Obsidian Express | Our Story and Team</title>
+    <meta name="description" content="Meet the founder, manager and head chef behind Obsidian Express, a Braamfontein restaurant celebrating authentic, locally sourced South African cuisine.">
+    <meta name="keywords" content="about Obsidian Express, South African restaurant team, Braamfontein chef">
+    <meta name="author" content="Obsidian Express">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="canonical" href="https://obsidian-express.netlify.app/about.html">
+    <link rel="icon" type="image/png" href="images/obsidian-express-logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Obsidian Express">
+    <meta property="og:title" content="About Obsidian Express | Our Story and Team">
+    <meta property="og:description" content="Meet the founder, manager and head chef behind Obsidian Express, a Braamfontein restaurant celebrating authentic, locally sourced South African cuisine.">
+    <meta property="og:url" content="https://obsidian-express.netlify.app/about.html">
+    <meta property="og:image" content="https://obsidian-express.netlify.app/images/restaurant-interior.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header>
         <nav aria-label="Main navigation">
             <a href="home.html">
-                <img src="images/OBSIDIAN LOGO.png" alt="Obsidian Express logo">
+                <img src="images/obsidian-express-logo.png" alt="Obsidian Express logo">
             </a>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <section class="about-intro">
-            <h2>About Us</h2>
+            <h1>About Us</h1>
             <p>Welcome to Obsidian Express! We are a team of passionate chefs and food enthusiasts dedicated to bringing you the best of South African cuisine. Our mission is to provide a unique dining experience that combines traditional flavours with modern culinary techniques. Let us take you on a culinary journey through the heart of South Africa &mdash; meet our team and learn about the passion behind every dish.</p>
-            <img src="images/Restuarant.jpg" alt="Restaurant interior" loading="lazy">
+            <img src="images/restaurant-interior.jpg" alt="Restaurant interior" loading="lazy">
         </section>
 
         <section>
@@ -37,26 +54,73 @@
             <p>Obsidian Express was founded in 2026 with a vision to create a dining experience that celebrates the rich culinary heritage of South Africa. Our founder, Mr Athi Mavovana, who comes from a diverse background in the food industry, wanted to create a space where people could enjoy authentic South African dishes made with fresh, locally sourced ingredients. In the past few months we have grown into a beloved establishment known for our commitment to quality and innovation in the kitchen &mdash; because fast food doesn't have to lose its elegance.</p>
             <div class="team-grid">
                 <div class="team-card">
-                    <img src="images/founder.jpg" alt="Founder, Mr Athi Mavovana" loading="lazy">
+                    <img src="images/founder-athi-mavovana.jpg" alt="Founder, Mr Athi Mavovana" loading="lazy">
                     <h3>Founding Member</h3>
                     <p>Athi Mavovana &mdash; founded Obsidian Express to bring authentic, locally sourced South African flavour to fast dining.</p>
                 </div>
                 <div class="team-card">
-                    <img src="images/manager.jpg" alt="Restaurant Manager, Mr Nande Mavovana" loading="lazy">
+                    <img src="images/manager-nande-mavovana.jpg" alt="Restaurant Manager, Mr Nande Mavovana" loading="lazy">
                     <h3>Restaurant Manager</h3>
                     <p>Nande Mavovana brings years of hospitality experience, ensuring every guest has a memorable dining experience.</p>
                 </div>
                 <div class="team-card">
-                    <img src="images/Chef.jpg" alt="Head Chef, Mr Yonwaba Bewana" loading="lazy">
+                    <img src="images/head-chef-yonwaba-bewana.jpg" alt="Head Chef, Mr Yonwaba Bewana" loading="lazy">
                     <h3>Head Chef</h3>
                     <p>Yonwaba Bewana leads our kitchen with a passion for showcasing the best of South African cuisine, both delicious and visually stunning.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section aria-labelledby="values-title">
+            <h2 id="values-title">What We Stand For</h2>
+            <div class="tabs">
+                <div class="tab-list" role="tablist" aria-label="Our values">
+                    <button role="tab" id="tab-fresh" aria-selected="true" aria-controls="panel-fresh" type="button">Fresh &amp; Local</button>
+                    <button role="tab" id="tab-fast" aria-selected="false" aria-controls="panel-fast" type="button" tabindex="-1">Fast &amp; Fine</button>
+                    <button role="tab" id="tab-heritage" aria-selected="false" aria-controls="panel-heritage" type="button" tabindex="-1">Heritage</button>
+                </div>
+                <div role="tabpanel" id="panel-fresh" aria-labelledby="tab-fresh"><p>We source ingredients from local suppliers wherever we can, so every plate supports South African farmers and tastes as fresh as it should.</p></div>
+                <div role="tabpanel" id="panel-fast" aria-labelledby="tab-fast" hidden><p>Fast food does not have to lose its elegance. Our kitchen is organised so dishes are fired quickly and plated precisely for people on the move.</p></div>
+                <div role="tabpanel" id="panel-heritage" aria-labelledby="tab-heritage" hidden><p>From kota to mogodu, our menu honours the dishes that South Africans grew up with and introduces them to a new audience.</p></div>
+            </div>
+        </section>
+
+        <section aria-labelledby="faq-title">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3><button class="accordion-trigger" id="faq1-btn" aria-expanded="false" aria-controls="faq1" type="button">Where are you located?</button></h3>
+                    <div class="accordion-panel" id="faq1" role="region" aria-labelledby="faq1-btn"><p>We are at 50 Stiemens Street, Floor 8, Braamfontein, Johannesburg. See the <a class="text-link" href="contact.html">contact page</a> for a map.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <h3><button class="accordion-trigger" id="faq2-btn" aria-expanded="false" aria-controls="faq2" type="button">What are your opening hours?</button></h3>
+                    <div class="accordion-panel" id="faq2" role="region" aria-labelledby="faq2-btn"><p>Monday to Friday 10:00 &ndash; 21:00, and Saturday to Sunday 11:00 &ndash; 22:00.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <h3><button class="accordion-trigger" id="faq3-btn" aria-expanded="false" aria-controls="faq3" type="button">Do you cater for events?</button></h3>
+                    <div class="accordion-panel" id="faq3" role="region" aria-labelledby="faq3-btn"><p>Yes. Use our <a class="text-link" href="enquiry.html">enquiry form</a> for an instant estimate. Catering needs at least 48 hours&rsquo; notice.</p></div>
+                </div>
+                <div class="accordion-item">
+                    <h3><button class="accordion-trigger" id="faq4-btn" aria-expanded="false" aria-controls="faq4" type="button">Is the braai plate available every day?</button></h3>
+                    <div class="accordion-panel" id="faq4" role="region" aria-labelledby="faq4-btn"><p>The braai plate is served Friday to Sunday. All other dishes are available daily during opening hours.</p></div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
+        <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://www.facebook.com/profile.php?id=61594124307209" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/obsidian_express/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
         <p>&copy; 2026 Obsidian Express. All rights reserved.</p>
     </footer>
+    <script src="js/menu-data.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

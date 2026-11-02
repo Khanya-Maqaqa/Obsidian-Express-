@@ -41,18 +41,13 @@ button, input, textarea {
   --silver: #c9cbd1;
   --off-white: #f3f1ec;
   --border-soft: rgba(255, 255, 255, 0.08);
-
-  /* typography */
   --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-body: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
-
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.75rem;
   --space-lg: 3rem;
   --space-xl: 5rem;
-
-  /* layout */
   --max-width: 1200px;
   --radius: 12px;
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.45);
@@ -63,7 +58,7 @@ body {
   background-color: var(--obsidian);
   background-image:
     linear-gradient(180deg, rgba(11, 11, 13, 0.92) 0%, rgba(11, 11, 13, 0.96) 100%),
-    url("images/DARK MINIMALIST TEXTURED WALLPAPER.jpg");
+    url("../images/DARK MINIMALIST TEXTURED WALLPAPER.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -461,9 +456,6 @@ address a:focus-visible {
   height: 100%;
   border: 0;
 }
-
-
-c
 
 footer {
   text-align: center;
