@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /js/
+
+Sitemap: https://obsidian-express.netlify.app/sitemap.xml
